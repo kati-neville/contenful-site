@@ -24,8 +24,8 @@ export const Link = ({ link }: LinkProps) => {
 		<LinkComponent
 			href={link.href}
 			target={link.isExternal ? "_blank" : "_self"}
-			className={`flex items-center ${style}`}>
-			{link?.name}{" "}
+			className={`flex items-center space-x-2 ${style}`}>
+			<span>{link?.name}</span>{" "}
 			{link?.icon?.url ? (
 				<Image src={link?.icon?.url} width={24} height={24} alt="link icon" />
 			) : null}

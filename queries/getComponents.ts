@@ -218,12 +218,22 @@ export const getComponentHead = /* GraphQL */ `
 				href
 				isExternal
 				type
+				icon {
+					width
+					height
+					url
+				}
 			}
 			secondaryActionLink {
 				name
 				href
 				isExternal
 				type
+				icon {
+					width
+					height
+					url
+				}
 			}
 			landingImage {
 				url

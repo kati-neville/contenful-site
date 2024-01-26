@@ -25,7 +25,10 @@ export const ComponentNavigation = ({
 				className="flex items-center justify-between p-6 lg:px-8"
 				aria-label="Global">
 				<div className="flex lg:flex-1">
-					<NextLink href="/" className="-m-1.5 p-1.5">
+					<NextLink
+						href="https://github.com/kati-neville/contenful-site"
+						target="_blank"
+						className="-m-1.5 p-1.5">
 						{component?.logo?.url ? (
 							<Image
 								width={40}
@@ -66,7 +69,10 @@ export const ComponentNavigation = ({
 				<div className="fixed inset-0 z-50" />
 				<Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
 					<div className="flex items-center justify-between">
-						<a href="#" className="-m-1.5 p-1.5">
+						<NextLink
+							href="https://github.com/kati-neville/contenful-site"
+							target="_blank"
+							className="-m-1.5 p-1.5">
 							<Image
 								width={40}
 								height={40}
@@ -76,7 +82,7 @@ export const ComponentNavigation = ({
 								}
 								alt="logo"
 							/>
-						</a>
+						</NextLink>
 						<button
 							type="button"
 							className="-m-2.5 rounded-md p-2.5 text-gray-700"

@@ -31,7 +31,10 @@ export const ComponentHero = ({
 							{component?.description}
 						</p>
 						<div className="mt-10 flex items-center justify-center gap-x-6">
+							{/* @ts-ignore */}
 							<Link link={component?.primaryActionLink} />
+							{/* @ts-ignore */}
+
 							<Link link={component?.secondaryActionLink} />
 						</div>
 					</div>

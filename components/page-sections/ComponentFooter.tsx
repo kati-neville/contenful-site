@@ -33,14 +33,20 @@ export function ComponentFooter({
 					Footer
 				</h2>
 				<div className="xl:grid xl:grid-cols-3 xl:gap-8">
-					{component?.logo?.url ? (
-						<Image
-							width={30}
-							height={30}
-							alt="Logo"
-							src={component?.logo?.url}
-						/>
-					) : null}
+					<NextLink
+						href="https://github.com/kati-neville/contenful-site"
+						target="_blank"
+						className="-m-1.5 p-1.5">
+						{component?.logo?.url ? (
+							<Image
+								width={30}
+								height={30}
+								alt="Logo"
+								src={component?.logo?.url}
+							/>
+						) : null}
+					</NextLink>
+
 					<div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
 						{columns.map((columnGroup, idx) => (
 							<div key={idx} className="md:grid md:grid-cols-2 md:gap-8">
